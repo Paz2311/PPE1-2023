@@ -1,7 +1,7 @@
 # Journal de bord
 
  Lundi 25 septembre -
-#J'ai commencé à faire les exercices de façon manuelle, après je me suis rendu compte qu'il fallait utiliser des commandes. J'ai réussi à créer les dossiers txt jpg docs avec mkdir et j'ai réussi à créer des dossiers 2018, 2017, 2016 à l'intérieur de ceux-ci, cependant jái pas réussi à les déplacer d'un dossier à un autre.
+J'ai commencé à faire les exercices de façon manuelle, après je me suis rendu compte qu'il fallait utiliser des commandes. J'ai réussi à créer les dossiers txt jpg docs avec mkdir et j'ai réussi à créer des dossiers 2018, 2017, 2016 à l'intérieur de ceux-ci, cependant jái pas réussi à les déplacer d'un dossier à un autre.
   
 Mardi 26 septembre -
  J'ai réussi à faire l'exercice avec l'aide d'une camarade et des tutos d'un cours python que j'avais pris il y a quelque temps. J'ai utilisé ces commandes : 
@@ -37,7 +37,7 @@ J e décide répéter l'exercice de l'arborescence.
 Je préfère déplacer les fichiers 2018 d'abord au dossier qui correspond selon son format et après les déplacer vers les dossiers 01, 02, 03, etc.> cd 2018 > mv *02.ann 02
 Je ne sais pas comment déplacer les fichiers "paris"et "tokio". J'ai essayé mv *paris*.jpg paris mais ça ne marche pas.
 
- J'ai déja cloné mon repositoire sur ma machine ! J'ai eu problèmes pour le faire, j'ai dû effacer la clé publique de Git hub et la coller à nouveau, mais j'ai déjà réussi ! 
+J'ai déja cloné mon repositoire sur ma machine ! J'ai eu problèmes pour le faire, j'ai dû effacer la clé publique de Git hub et la coller à nouveau, mais j'ai déjà réussi ! 
 
 
 
