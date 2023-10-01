@@ -37,7 +37,6 @@ J e décide répéter l'exercice de l'arborescence.
 Je préfère déplacer les fichiers 2018 d'abord au dossier qui correspond selon son format et après les déplacer vers les dossiers 01, 02, 03, etc.> cd 2018 > mv *02.ann 02
 Je ne sais pas comment déplacer les fichiers "paris"et "tokio". J'ai essayé mv *paris*.jpg paris mais ça ne marche pas.
 
-J'ai déja cloné mon repositoire sur ma machine ! J'ai eu problèmes pour le faire, j'ai dû effacer la clé publique de Git hub et la coller à nouveau, mais j'ai déjà réussi ! 
 
 
 
