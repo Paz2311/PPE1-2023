@@ -18,7 +18,7 @@ ls
 Mercredi 27 septembre -
 Je vois en cours qu'il est plus facile d'écrire tout le chemin du dossier dans lequel je veux travailler.
 
-Dimanche 1er octobre 
+Dimanche 1er octobre -
 Je décide répéter l'exercice de l'arborescence. 
 1. Pour commencer, j'ai écrit le chemin absolu vers le dossier où j'ai extrait les fichier > cd /home/pazsworkspace2309/Documents/M1/PPE/EX1/Fichiers
 2. J'ai crée des dossiers > mkdir txt ann img docs
