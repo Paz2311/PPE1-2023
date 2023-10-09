@@ -55,9 +55,20 @@ Je ne sais pas comment déplacer les fichiers "paris"et "tokio". J'ai essayé mv
 
 J'ai déja cloné mon repositoire sur ma machine ! J'ai eu problèmes pour le faire, j'ai dû effacer la clé publique de Git hub et la coller à nouveau, mais j'ai déjà réussi !
 
+## Troisième séance
+Vendredi 6 octobre
+J'ai créé un groupe pour le projet final avec Patricia AGUSTYN (P3) et Agata SKRZYNIARZ(INALCO). Nous avons choisi de travailler avec le mot "Bonheur" en espagnol, français et polonais.
 
+Lundi 9 octobre
+Je suis en train de faire la deuxième partie des exercices.
+J'ai déjà créé le fichier oups.md et j'ai déjà fait deux commits que j'ai poussées. Je vérifie avec git log et je vois qu'il y a un commit fait aujourdhui, le 9 octobre.
+Pour revenir en arrière. J'utilise la commande git reseat HEAD~
+Je vérifie les différences entre ma machine et mon repositoire vituel avec git diff. Avec git log je me rends compte que ça a marché !
+Je ne sais pas comment basculer les changements ver le bon fichier avec des commandes. On ne l'a pas vu en cours donc j'imagine qu'il faut le faire manuellement.
+Je recupere les changements et je le spose ici :
+ -  Essai devoir séance 3
 
+ - Deuxième commit essai séance 3
 
-
-
+Je suprime oups.md et je vais commiter, tagger et pousser mon journal de bord.
 
