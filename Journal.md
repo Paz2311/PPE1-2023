@@ -73,6 +73,10 @@ Je recupere les changements et je le spose ici :
 Je suprime oups.md et je vais commiter, tagger et pousser mon journal de bord.
 
 ## Quatrième séance
+Mercredi 11 octobre
 Je viens de me rendre compte que le fichier oups.md est retourné sur ma machine et que le tag que j'avais fait de la semaine 3 n'est pas là. Je pense que le fichier est là encore parce que j'ai dÛ faire git pull.
+J'ai réussi a effacer oups.md avec git rm oups.md et après git commit -m "suppresion oups.md"
 
+12 octobre
+Je me rends compte que j'ai mal fait les tags jusqu'ce moment, donc je vais re-pousser mon troisième tag.
 
