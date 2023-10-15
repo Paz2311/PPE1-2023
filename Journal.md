@@ -80,3 +80,25 @@ J'ai réussi a effacer oups.md avec git rm oups.md et après git commit -m "supp
 12 octobre
 Je me rends compte que j'ai mal fait les tags jusqu'ce moment, donc je vais re-pousser mon troisième tag.
 
+15 octobre
+J'ai réussi à mettre dans un fichiers texte toutes les annotations de Septembre des couments .ann. Pour le faire j'ai utilisé la commande cat ./*/09/* | grep Location | cut -f 3 | sort | uniq -c | sort -nr > annseptembre.txt
+
+J'ai du mal à comprendre comment faire le script.
+Je fais l'exercice de la création d'un script mais je me rends compte de l'importance de tout sauvegarder dans le même dossier, parce que pour que mon script marche, le script doit être dans le même dossier.
+
+J'ai fait ça :
+#!usr/bin/bash
+
+echo "nombre de locations 2016" >> scripts4.txt
+grep "Location" 2016/*/*.ann | wc -l >> scripts4.txt
+echo "nombre de locations 2017" >> scripts4.txt
+grep "Location" 2017/*/*.ann | wc -l >> scripts4.txt
+echo "nombre de locations 2018" >> scripts4.txt
+grep "Location" 2018/*/*.ann | wc -l >> scripts4.txt
+
+Ma collègue Maddie m'a expliqué que je peux créer le chemin des documents et apres écrite le nom de mon script pourque ça marche !
+
+Je ne comprends pas comment faire le premier exercice. Je pense qu'on aurait pu faire ça en cours pour avoir de l'aide. Je dois demander de l'aide.
+J'ai réussi ! J'ai crée le premier script et j'ai bien fait le deuxième pour qu'il appelle le premier !
+
+J'ai réussi à faire ledeuxième exercice ! Il s'agissait de mettre la commande qu'on a fait en cours dans le script en y ajoutant de variables.
