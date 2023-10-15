@@ -1,0 +1,7 @@
+Exercice script bash
+nombre de locations 2016
+3144
+nombre de locations 2017
+2466
+nombre de locations 2018
+3110
