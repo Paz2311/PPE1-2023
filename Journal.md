@@ -87,7 +87,7 @@ J'ai du mal à comprendre comment faire le script.
 Je fais l'exercice de la création d'un script mais je me rends compte de l'importance de tout sauvegarder dans le même dossier, parce que pour que mon script marche, le script doit être dans le même dossier.
 
 J'ai fait ça :
-#!usr/bin/bash
+ \#!usr/bin/bash
 
 echo "nombre de locations 2016" >> scripts4.txt
 grep "Location" 2016/*/*.ann | wc -l >> scripts4.txt
@@ -96,9 +96,31 @@ grep "Location" 2017/*/*.ann | wc -l >> scripts4.txt
 echo "nombre de locations 2018" >> scripts4.txt
 grep "Location" 2018/*/*.ann | wc -l >> scripts4.txt
 
-Ma collègue Maddie m'a expliqué que je peux créer le chemin des documents et apres écrite le nom de mon script pourque ça marche !
+Ma collègue Maddie m'a expliqué que je peux créer le chemin des documents et apres écrire le nom de mon script pourque ça marche !
 
 Je ne comprends pas comment faire le premier exercice. Je pense qu'on aurait pu faire ça en cours pour avoir de l'aide. Je dois demander de l'aide.
 J'ai réussi ! J'ai crée le premier script et j'ai bien fait le deuxième pour qu'il appelle le premier !
 
 J'ai réussi à faire ledeuxième exercice ! Il s'agissait de mettre la commande qu'on a fait en cours dans le script en y ajoutant de variables.
+
+## Cinquième séance
+Mercredi 18 octobre
+J'ai fait la validation de mon script du dernier exercice de la semaine dernière.
+
+Pour le premier j'ai essayé de vérifier si c'était une chaine vide avec -z. Pour l'instant, je n'ai pas réussi.
+
+Pour le deuxième, j'ai crée un script (ScriptB18o.sh) où j'ai vérifié si ce n'était pas une chaine vide avec -n, de cete façon [[ -n $1 && -n $2 && -n $3 ]]. J'ai dû chercher comment évaluer plusieurs conditions dans une même ligne. Je pensais qu'on ne pouvait pas le faire mais voilà ça marche ! Pour arrêter le programme si ça ne marchait pas, j'ai utilisé exit dans else.
+
+Lundi 23 octobre
+Je me suis rendu compte qu'il y avait un problème dans mon premier script, parce que je n'ai pas mis les variables dans le bon ordre et parce que je n'ai pas précisé qu'il y avait une année différente dans chaque ligne. J'ai démande a ma machine de me montrer les résultats dans le terminal au lieu de les envoyer dans un fichier txt, de cette façon je pourrai bien voir le résultat. L'erreur était celle-ci :
+ombre de locations 2016
+3144
+nombre de locations 2017
+3144
+nombre de locations 2018
+3144
+
+Donc, j'ai établi seulement le type de fichier comme variable (j'ai fait un nouveau script qui s'appelle Sai.sh) et voilà ça marche ! Je suis contente parce que depuis quelques jours je peux trouver des solutions seule.
+
+Aussi, j'ai réussi a améliorer un autre script qui appelle Sai.sh où je valide avec if et [-z] si les arguments sont vides ou pas. (ScriptC18.sh)
+
