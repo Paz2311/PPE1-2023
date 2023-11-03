@@ -124,3 +124,33 @@ Donc, j'ai établi seulement le type de fichier comme variable (j'ai fait un nou
 
 Aussi, j'ai réussi a améliorer un autre script qui appelle Sai.sh où je valide avec if et [-z] si les arguments sont vides ou pas. (ScriptC18.sh)
 
+##Sixième séance
+25 octobre
+Exercice 1 en cours
+2. Pour transformer urls/fr.txt en paramètre du script, je dois constuire une variable avec le nom du fichier dans mon script d'origine "miniprojet.sh".
+2.1 Pour vérifier si le fichier existe et n'est pas vide, j'utilise -s.
+En cours, je n'ai pas réussi à le faire seule. Je me suis rendu compte que je pensais que a la fin, quand on écrit "done <", on envoyait les documents ver le fichier qu'on met apres, mais non, c'est le fichier que je vais utiliser comme argument. Je l'ai confondu avec >>.
+
+Apres avoir vu la correction du cours, je comprends. J'ai refait le script pas à pas pour apprendre et ça va mieux.
+
+Pour le deuxième exercice, j'ai utilisé la commande curl -I - s, comme on a vu en cours. J'ai ajouté aussiun pipe et head -n 1 pour savoir seulement quel est le code HTTP.
+
+docurl=$1
+linenum=0
+
+
+while read -r line
+
+do
+    echo -e "${linenum} \t ${line} \t $(curl -I -s $line | head -n 1)"
+	linenum=$(expr $linenum + 1)
+
+done < $docurl
+
+Mercredi 1 novembre
+Il a été vraiment difficile de corriger l'erreur 301 des pages web, mais j'ai réussi seule et seulement avec la recherche que j'ai faite !
+Je pense que le plus grand problème pour moi c'est de comprendre dans quel ordre je dois écrire les commandes.
+
+J'ai continué a utiliser curl mais j'ai trouvé que l'option "-o /dev/null/ -w "%{http_code}" va seulement afficher le code http, ce qui ne se passait pas avec "curl -I | head -n 1" (j'ai vu des exemples où ça marchait mais sur mon ordi non).
+
+J'ai repris l'exo, pour savoir quel est l'encodage des pages web, j'ai utilisé la commande "file", que nous avons apprise en cours de G.I.M. Le problème avec celle-ci, c'est que je ne sais pas comment délimiter la réponse, pour cseuelement avoir le type d'encodage.  J'ai essayé avec d'autres commandes comme grep -i "Content-Type", mais ça ne marche pas, donc je reste avec file.
