@@ -154,3 +154,16 @@ Je pense que le plus grand problème pour moi c'est de comprendre dans quel ordr
 J'ai continué a utiliser curl mais j'ai trouvé que l'option "-o /dev/null/ -w "%{http_code}" va seulement afficher le code http, ce qui ne se passait pas avec "curl -I | head -n 1" (j'ai vu des exemples où ça marchait mais sur mon ordi non).
 
 J'ai repris l'exo, pour savoir quel est l'encodage des pages web, j'ai utilisé la commande "file", que nous avons apprise en cours de G.I.M. Le problème avec celle-ci, c'est que je ne sais pas comment délimiter la réponse, pour cseuelement avoir le type d'encodage.  J'ai essayé avec d'autres commandes comme grep -i "Content-Type", mais ça ne marche pas, donc je reste avec file.
+
+
+Septième séance
+Dimanche 12 novembre
+Pour réussir à faire ces exercices , j'ai dû faire beaucoup de recherche !
+Lors du premier exercice , j'ai utilisé la commande grep option -o pourque ça imprime seulement les caractères que je lui ai demandé plus l 'expression "\w*" qui cherche seulement des caractères alphanumeriques.
+Aurrsi, j´ ai utilisé tr [:upper:] [:lower:] pour convertir les mayuscules en minuscules et [:alnum:] [:space:] pourque ça ne montre pas la ponctuation. Je ne savais trop ou placer "grep" en utilisant les pipes, j'ai utilisé dans plusieurs places, mais j'ai trouvé que le faire une fois le document est nettoyé a été la meilleure option.
+
+Pour l'exercice 2 j'ai pris beaucoup de temps, au début j'ai fait une boucle, qui n'était pas nécessaire et j'e ne savais pas très bien comment faire la syntaxe pour que ça marche. Mon erreur a été que j'ai crée un document pour la sortie du premier exercice. Je l'ai corrigé et maintenant ça marche.  J'ai utilisé if pour rendre le deuxième argument optionnel.
+
+Pour l'exercice 3, j'ai pensé a faire des documents séparemement d'après ce que j'ai lu sur la commande paste, mais j'ai pensé qu'il devait y avoir une autre solution plus simple qui travaille seulement dans un document. J'ai trouvé qu'avec "-d" on peut délimiter les deux mots et on ajoute "-" par chaque mot de l'entrée standard.
+
+Pour la construction du tableau html, je savais pas trop la façon d'organiser les informations, donc j'en ai cherche des exemples et ça marche ! Il faut juste faire attention à l'identation.
