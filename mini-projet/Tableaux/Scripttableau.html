@@ -1,0 +1,36 @@
+docurl=$1
+
+echo "<html>
+<head>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>LIGNE</th>
+			<th>URL</th>
+			<th>CODE HTTP</th>
+			<th>ENCODAGE</th>
+		</tr>" > "tableauHTML.html"
+
+linenum=1
+while read -r ligne
+
+do
+	code=$(curl -s -I -L -w "%{http_code}" -o /dev/null $ligne)
+	encodage=$(curl -s -I -L -w "%{content_type}" -o /dev/null $ligne | grep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
+	echo -e "
+	<tr>
+		<td>$linenum</td>
+		<td>$ligne</td>
+		<td>$code</td>
+		<td>$encodage</td>
+	</tr>" >> "tableauHTML.html"
+
+	linenum=$(expr $linenum + 1)
+
+done < "$docurl"
+
+echo " </table>
+</body>
+</html>" >> "tableauHTML.html"
