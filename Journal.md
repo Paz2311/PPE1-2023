@@ -167,3 +167,7 @@ Pour l'exercice 2 j'ai pris beaucoup de temps, au début j'ai fait une boucle, q
 Pour l'exercice 3, j'ai pensé a faire des documents séparemement d'après ce que j'ai lu sur la commande paste, mais j'ai pensé qu'il devait y avoir une autre solution plus simple qui travaille seulement dans un document. J'ai trouvé qu'avec "-d" on peut délimiter les deux mots et on ajoute "-" par chaque mot de l'entrée standard.
 
 Pour la construction du tableau html, je savais pas trop la façon d'organiser les informations, donc j'en ai cherche des exemples et ça marche ! Il faut juste faire attention à l'identation.
+
+Huitième séance
+Dimance 19 novembre
+D'abord, j'ai créé la page d'accueil sur Visual Studio Code avec des classes et divisions de Bulma, mais j'ai eu des problèmes pour y insérer le tableau html. J'ai fait des recherches pour pouvoir l'insérer et j'ai trouvé que je dois avoir le tableau html  dans le même directoire. Après, j'ai fait push pour le mettre sur mon dépôt dans la racine(puisque l'index doit être dans la racine aussi). J'ai modifié directement son CSS avec bulma. Cependant, je me suis rendu compte que j'avais mal compris les instructions. Je pensais qu'il fallait modifier le script initial (celui qui extrait les url des tableaux), mais non et étant donné que j'ai modifié le code sur git hub, cela a causé des problémes au moment de faire git push pour tester ma page. Cependant, apres beaucoup d'efforts, j'ai réussi.
